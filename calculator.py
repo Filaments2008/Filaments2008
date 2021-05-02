@@ -4,13 +4,8 @@ import tkinter.font as font
 root = Tk()
 root.title("CALCULATOR")
 
-#x length
-#y height
-
 e = Entry(root, width=19, borderwidth=6)
 e.grid(row=0, column=0, columnspan=3, padx=19, pady=19)
-
-#e.insert(0, " ")
 
 def button_click(number):
 	current = e.get()
@@ -75,7 +70,6 @@ def button_divide():
 buttonFont = font.Font(family='Helvetica', size=16, weight='normal')
 root.configure(bg="#252525")
 
-#var
 button_1 = Button(root, text="1", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=lambda: button_click(1))
 button_2 = Button(root, text="2", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=lambda: button_click(2))
 button_3 = Button(root, text="3", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=lambda: button_click(3))
@@ -88,13 +82,10 @@ button_9 = Button(root, text="9", bg="grey", fg="white", padx=50, pady=19, borde
 button_0 = Button(root, text="0", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=lambda: button_click(0))
 button_add = Button(root, text="+", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=button_add)
 button_equal = Button(root, text="=", bg="grey", fg="white", padx=50, pady=19, borderwidth=6, font=buttonFont, command=button_equal)
-button_erase = Button(root, text="Clear", bg="grey", fg="white", padx=20, pady=19, borderwidth=6, font=buttonFont, command=button_erase)                                                          #qwerty12345
+button_erase = Button(root, text="Clear", bg="grey", fg="white", padx=20, pady=19, borderwidth=6, font=buttonFont, command=button_erase)     
 button_subtract = Button(root, text="-", bg="grey", fg="white", padx=51, pady=19, borderwidth=6, font=buttonFont, command=button_subtract)
 button_multiply = Button(root, text="*", bg="grey", fg="white", padx=45, pady=19, borderwidth=6, font=buttonFont, command=button_multiply)
 button_divide = Button(root, text="÷", bg="grey", fg="white", padx=40, pady=19, borderwidth=6, font=buttonFont, command=button_divide)
-
-#space
-
 
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
